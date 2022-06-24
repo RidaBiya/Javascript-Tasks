@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var a=10
+        var b=5
+        var oper='+'
+        function rida()
+        {
+        switch(oper)
+        {
+            case'+':
+                alert(a+b)
+                break
+            case'-':
+                alert(a-b)
+                break
+            case'*':
+                alert(a*b)
+                break
+            case'/':
+                alert(a/b)
+                break
+            default:
+                alert('invalid operator')
+        }
+    }
+    </script>
+</head>
+<body>
+    <button onclick="rida();">Click</button>
+</body> 
+</html>

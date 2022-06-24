@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map_function</title>
+    <script> 
+    function tell()
+    {
+        var ary=[
+            {fname:"Rida" ,lname:"Tahir"},
+            {fname:"kiran" ,lname:"Bilal"},
+            {fname:"safia" ,lname:"perveen"}
+        ];
+        var b=ary.map(test);
+        alert (b)
+        function test(x)
+        { 
+            return x.fname + " "+ x.lname;
+        }
+    }
+    </script>
+</head>
+<body>
+    <button onclick="tell()">Click</button>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // concatination work
+        
+        Concatination=()=>
+        {
+        var numbers=[1,2,3,4,5,6,7,8,9]
+        var names=["rida","kiran","ahmad"]
+        var Roll_no=["12","15","16"]
+        var emp=["biya","jiya","ahmad"]
+        var arr2=emp.concat(names,Roll_no,emp)
+        alert(arr2)
+        }
+
+        //object names change for the time//
+
+        function Forin_loop()
+        {
+            var student_info={fname:"Biya",lname:"jiya",address:"swl"}
+            for(let i in student_info)
+            {
+                if(student_info[i]=="Biya")
+                {
+                    student_info[i]="Rida"
+                }
+                alert(student_info[i])
+            }
+        }
+
+        // any user login//
+        function username()
+        {
+            var user=["ali123","haider55","raza17"]
+            var a=prompt("Enter your user Name")
+            for(let i=0; i<user.length; i++)
+            {
+                if(user[i]==a)
+                alert(user[i]+"Succesfully Logged In")
+            }
+        }
+
+        //create Object
+        function object()
+        {
+        var student_name=["Ali","Qasim","haider"]
+        
+        var student_info=
+        [
+            {firstName:"Ali",lastName:"Hamza",address:"swl",marks:"23"},
+            {firstName:"Qasim",lastName:"Raza",address:"swl",marks:"26"},
+            {firstName:"Haider",lastName:"Ali",address:"swl",marks:28}
+        ]
+        for(let i in student_info)
+        {
+        alert(student_name[i])
+        }
+        }
+    </script>
+</head>
+<body>
+    <!-- button concatination -->
+    <button onclick="Concatination();">Concate</button>
+    <!-- button for-in loop -->
+    <button onclick="Forin_loop();">Forin_loop</button>
+    <!-- button login -->
+    <button onclick="username();">login</button>
+    <!-- button object -->
+    <button onclick="object();">Object</button>
+    
+</body>
+</html>
